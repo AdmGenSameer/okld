@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Spending Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Spending Tracker</h1>
+        <div class="form-container">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter Title">
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter Amount">
+
+            <button onclick="addSpending()">Add Spending</button>
+        </div>
+
+        <div class="spending-list">
+            <h2>Spending List</h2>
+            <ul id="spending-list"></ul>
+        </div>
+
+        <div class="graph-container">
+            <h2>Spending Insight Graph (Past 6 Days)</h2>
+            <canvas id="spending-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
